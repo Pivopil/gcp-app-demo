@@ -1,0 +1,12 @@
+# https://cloud.google.com/solutions/managing-infrastructure-as-code
+timeout: 1200s
+steps:
+  # terraform init -input=false
+  - name: "hashicorp/terraform:0.12.29"
+    args:
+      - init
+      - -input=false
+  # terraform validate
+  - name: "hashicorp/terraform:0.12.29"
+    args:
+      - validate
