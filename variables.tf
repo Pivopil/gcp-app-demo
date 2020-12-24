@@ -15,10 +15,10 @@ variable "target_project_name" {
 
 variable "billing_account_id" {
   description = "Org billing account id"
-  type = string
+  type        = string
 }
 
 variable "folder_id" {
   description = "'gcp_training_root' folder id"
-  type = string
+  type        = string
 }
